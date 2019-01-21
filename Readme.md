@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Виктор Продеус](https://up.htmlacademy.ru/htmlcss/24/user/814599).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Альтигин](https://htmlacademy.ru/profile/artem).
 
 ---
 
