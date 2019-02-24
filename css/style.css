@@ -1,4 +1,5 @@
 ﻿body {
+	min-width: 1200px;
 	margin: 0;
 	padding: 0;
 	font-family: 'PT Sans', Arial, sans-serif;
@@ -98,7 +99,7 @@ img {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	padding: 15px 0;
+	padding-top: 15px;
 }
 
 .header-logo {
@@ -129,26 +130,25 @@ img {
 
 .site-navigation li {
 	width: 240px;
+	padding-bottom: 15px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
-.site-navigation li:first-child {
+.navigation-item-left {
 	text-align: left;
+	padding-right: 20px;
 }
 
-.site-navigation li:nth-child(2) {
-	text-align: left;
+.right-auto {
 	margin-right: auto;
 }
 
-.site-navigation li:nth-child(3) {
+.navigation-item-right {
 	text-align: right;
-	margin-left: auto;
-}
-
-.site-navigation li:last-child {
-	text-align: right;
+	padding-left: 20px;
 }
 
 .site-navigation a {
@@ -186,6 +186,7 @@ img {
 	margin-bottom: 59px;
 	padding-top: 75px;
 	padding-bottom: 80px;
+	background-color: #deecf5;
 	background-image: url(../img/bg.jpg);
 	background-position: 0 -56px;
 	background-size: cover;
@@ -197,13 +198,12 @@ img {
 .wrapper-image::after {
 	position: absolute;
 	content: "";
-	bottom: 0;
+	bottom: -2.7px;
 	left: 0;
 	width: 100%;
 	height: 59px;
-	background-image: url(../img/intro-mask.svg);
-	background-position: 0 1.96px;
-	background-size: cover;
+	background-image: url("../img/intro-mask.svg");
+	background-position: center bottom;
 	background-repeat: no-repeat;
 }
 
@@ -221,6 +221,8 @@ img {
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .features {
@@ -230,6 +232,7 @@ img {
 .lead {
 	margin: 0;
 	margin-bottom: 50px;
+	padding: 0 60px;
 	font-size: 14px;
 	line-height: 26px;
 	text-align: center;
@@ -278,15 +281,19 @@ img {
 	text-align: center;
 	font-size: 21px;
 	line-height: 21px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .features-item-content span {
 	display: block;
 	margin: 0;
 	margin-bottom: 22px;
-	padding: 0;
+	padding: 0 40px;
 	font-size: 14px;
 	line-height: 21px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .features-item-content p {
@@ -294,6 +301,8 @@ img {
 	padding: 0 46px;
 	font-size: 14px;
 	line-height: 21px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .features-option {
@@ -309,7 +318,7 @@ img {
 }
 
 .option-item {
-	padding-top: 160px;
+	padding-top: 60px;
 	padding-bottom: 83px;
 	width: 400px;
 }
@@ -317,16 +326,20 @@ img {
 .option-item h3 {
 	position: relative;
 	margin: 0;
-	margin-bottom: 25px;
+	padding: 0 40px;
+	padding-top: 100px;
+	margin-bottom: 26px;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 21px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .option-item h3::before {
 	position: absolute;
 	content: "";
-	top: -100px;
+	top: 0px;
 	left: 50%;
 	margin-left: -37px;
 	width: 74px;
@@ -353,6 +366,8 @@ img {
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .features-item-group {
@@ -384,16 +399,20 @@ img {
 	text-align: center;
 	font-size: 21px;
 	line-height: 21px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .features-item-group span {
 	display: block;
 	margin: 0;
 	margin-bottom: 22px;
-	padding: 0;
+	padding: 0 40px;
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .features-item-group p {
@@ -402,6 +421,8 @@ img {
 	font-size: 14px;
 	line-height: 21px;
 	color: #333333;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .features-item-group .text-road {
@@ -420,21 +441,27 @@ img {
 
 .order-slogan {
 	display: block;
-	padding-bottom: 24px;
+	padding: 0 350px;
+	padding-bottom: 23px;
 	font-weight: bold;
 	font-size: 30px;
 	line-height: 36px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .order-text {
-	padding-bottom: 46px;
+	padding-bottom: 47px;
 }
 
 .order p {
 	margin: 0 auto;
+	padding: 0 350px;
 	font-size: 14px;
 	line-height: 24px;
 	color: #333333;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .order-button-wrapper {
@@ -444,7 +471,7 @@ img {
 .order-button {
 	display: inline-block;
 	vertical-align: middle;
-	padding: 30px 10px;
+	padding: 28px;
 	width: 568px;
 	min-height: 86px;
 	font-size: 21px;
@@ -453,10 +480,16 @@ img {
 	color: #ffffff;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .map {
+	position: relative;
 	height: 593px;
+	width: 100%;
+
+	overflow: hidden;
 }
 
 /* --- inner-page --- */
@@ -464,6 +497,7 @@ img {
 .filter-hotels {
 	padding-top: 28px;
 	padding-bottom: 32px;
+	background-color: #80a4c6;
 	background-image: url(../img/filter-bg.jpg);
 	background-size: cover;
 	background-position: 0 -57px;
@@ -593,17 +627,16 @@ img {
 
 .cost legend {
 	margin-bottom: 8px;
+	margin-left: 2px;
 }
 
 .price-controls {
 	position: relative;
-	height: 36px;
-	margin-bottom: 21px;
+	height: 34px;
+	margin-bottom: 20px;
 	font-size: 0;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 .price-controls::after {
@@ -615,28 +648,34 @@ img {
 	height: 22px;
 	background: #ffffff;
 	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
 
 .price-controls label {
 	display: inline-block;
 	font-size: 14px;
-	line-height: 33px;
-	vertical-align: top;
+	line-height: 34px;
+	vertical-align: center;
 	cursor: pointer;
 }
 
-.price-controls .min-price,
+.price-controls .min-price {
+	width: 90px;
+	padding-left: 64px;
+}
+
 .price-controls .max-price {
-	width: 82px;
-	padding-left: 65px;
+	width: 90px;
+	padding-left: 56px;
 }
 
 .price-controls input {
 	width: 50px;
+	height: 33px;
+	vertical-align: center;
 	margin: 0;
 	color: inherit;
+	line-height: 34px;
 	font: inherit;
 	background: none;
 	border: none;
@@ -644,7 +683,7 @@ img {
 
 .range-controls {
 	position: relative;
-	margin-bottom: 32px;
+	margin-bottom: 31px;
 }
 
 .range-controls .scale {
@@ -674,7 +713,6 @@ img {
 .range-toggle:focus,
 .range-toggle:hover {
 	-webkit-transform: scale(1.1);
-	-ms-transform: scale(1.1);
 	transform: scale(1.1);
 }
 
@@ -867,23 +905,21 @@ img {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.hotel-description {
+	overflow: hidden;
+}
+
 .hotel-description h3 {
 	margin: 0;
 	margin-bottom: 8px;
 	padding: 0;
+	padding-right: 20px;
 	text-align: left;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-}
-
-.hotel-description-list p {
-	margin: 0;
-	margin-bottom: 15px;
-	padding: 0;
-	font-size: 14px;
-	line-height: 21px;
-	color: #333333;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .hotel-description-list {
@@ -897,6 +933,17 @@ img {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+.hotel-description-list p {
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 0;
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .hotel-description-item:first-child {
@@ -921,6 +968,8 @@ img {
 	box-sizing: border-box;
 	border: none;
 	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .sort-hotels-item .hotel-rating {
@@ -971,7 +1020,7 @@ img {
 	-ms-flex-align: center;
 	align-items: center;
 	width: 100%;
-	padding: 36px 0 30px;
+	padding: 37px 0 30px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -987,12 +1036,16 @@ img {
 .copyright-text {
 	width: 400px;
 	margin: 0;
-	padding: 0;
+	padding: 0 40px;
 	text-align: center;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	margin-bottom: 6px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .social-buttons {
@@ -1010,7 +1063,6 @@ img {
 	list-style: none;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	margin-bottom: 5px;
 }
 
 .social-buttons a {
@@ -1026,6 +1078,7 @@ img {
 	width: 46px;
 	min-height: 48px;
 	margin-right: 6px;
+	margin-bottom: 6px;
 }
 
 .social-button:active path {
@@ -1033,6 +1086,7 @@ img {
 }
 
 .copyright-link {
+	padding: 0 40px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1044,6 +1098,8 @@ img {
 	align-items: center;
 	text-align: center;
 	width: 400px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .copyright-link p {
@@ -1053,6 +1109,8 @@ img {
 	font-size: 14px;
 	line-height: 26px;
 	margin-bottom: 6px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .copyright-logo:focus g,
@@ -1071,7 +1129,7 @@ img {
 	display: block;
 	margin: 0 auto;
 	margin-left: -284px;
-	top: 86px;
+	top: 0;
 	left: 50%;
 	z-index: 20;
 	min-height: 395px;
@@ -1082,6 +1140,21 @@ img {
 	box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+.modal {
+	display: none;
+}
+
+.modal-show {
+	display: block;
+	animation-name: bounce;
+	animation-duration: 0.5s;
+}
+
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.6s;
 }
 
 .form-order {
@@ -1141,8 +1214,16 @@ img {
 }
 
 .date-input .calendar {
+	position: absolute;
+	padding: 3px;
+	margin: 0;
+	font-size: 0;
+	margin-top: -14px;
+	top: 50%;
+	right: 6px;
+	background-color: transparent;
+	border: none;
 	fill: #a9a9a9;
-	outline: none;
 }
 
 .date-input .calendar:focus,
@@ -1308,20 +1389,11 @@ img {
 	position: relative;
 }
 
-.date-input .calendar {
-	position: absolute;
-	width: 21px;
-	height: 22px;
-	margin-top: -11px;
-	top: 50%;
-	right: 10px;
-}
-
 .form-submit {
 	display: inline-block;
 	vertical-align: middle;
 	width: 100%;
-	margin-top: 54px;
+	margin-top: 53px;
 	padding: 16px 10px;
 	font-size: 21px;
 	line-height: 26px;
@@ -1329,4 +1401,22 @@ img {
 	text-transform: uppercase;
 	color: #ffffff;
 	border: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+@keyframes bounce {
+	0%   { transform: translateY(-180px); }
+	50%  { transform: translateY(0); }
+	65%  { transform: translateY(-30px); }
+	90% { transform: translateY(0); }
+	95%  { transform: translateY(-25px); }
+	100% { transform: translateY(0); } 
+}
+
+@keyframes shake {
+	0%, 100%   { transform: translateX(0); }
+	10%, 30%, 50%, 70%, 90%  { transform: translateX(-10px); }
+	20%, 40%, 60%, 80%  { transform: translateX(10px); }
+	
 }
