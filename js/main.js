@@ -29,21 +29,19 @@ link.addEventListener("click", function(evt) {
 	} else {
 		dateEnter.focus();
 	}
-
-
 });
 
 form.addEventListener("submit", function(evt) {
 	if (!dateEnter.value || !dateOut.value) {
 	evt.preventDefault();
-	popup.classList.remove("modal-error"); // добавили хак
-	popup.offsetWidth = popup.offsetWidth; // добавили хак
+	popup.classList.remove("modal-error"); // добавили хак для валидации формы и вызова анимации
+	popup.offsetWidth = popup.offsetWidth; // добавили хак для валидации формы и вызова анимации
 	
 	popup.classList.add("modal-error");
 	} else {
 		localStorage.setItem("dateEnter", dateEnter.value);
 		localStorage.setItem("dateOut", dateOut.value);
-	} 
+	}
 });
 
 window.addEventListener("keydown", function (evt) {
