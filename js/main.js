@@ -1,4 +1,5 @@
 var link = document.querySelector(".order-button");
+var openPopup = document.querySelector(".modal-open");
 var popup = document.querySelector(".modal-order");
 
 var dateEnter = document.querySelector("[name=dateEnter]");
@@ -9,6 +10,8 @@ var form = document.querySelector("form");
 var isStorageSupport = true;
 var storageEnter = "";
 var storageOut = "";
+
+openPopup.classList.remove("modal-open");
 
 try {
 	storageEnter = localStorage.getItem("dateEnter");

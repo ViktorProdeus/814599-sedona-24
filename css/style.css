@@ -638,7 +638,6 @@ img {
 }
 
 .features-item-content h3 {
-	width: 151px;
 	margin: 0 auto;
 	margin-bottom: 25px;
 	padding: 0;
@@ -687,16 +686,15 @@ img {
 }
 
 .option-item {
-	padding-top: 60px;
+	position: relative;
+	padding-top: 160px;
 	padding-bottom: 83px;
 	width: 33.3334%;
 }
 
 .option-item h3 {
-	position: relative;
 	margin: 0;
 	padding: 0px 35px;
-	padding-top: 100px;
 	margin-bottom: 26px;
 	font-weight: bold;
 	font-size: 21px;
@@ -705,10 +703,10 @@ img {
 	text-overflow: ellipsis;
 }
 
-.option-item h3::before {
+.option-item::before {
 	position: absolute;
 	content: "";
-	top: 0px;
+	top: 60px;
 	left: 50%;
 	margin-left: -37px;
 	width: 74px;
@@ -717,16 +715,17 @@ img {
 	background-position: 0 0;
 }
 
-.option-item:first-child h3::before {
+.option-item:first-child::before {
 	background-image: url(../img/home.svg);
 }
 
-.option-item:nth-child(2) h3::before {
+.option-item:nth-child(2)::before {
 	background-image: url(../img/food.svg);
 }
 
-.option-item:last-child h3::before {
+.option-item:last-child::before {
 	background-image: url(../img/souvenir.svg);
+	background-position: 5px 0;
 }
 
 .option-item p {
@@ -856,7 +855,6 @@ img {
 	position: relative;
 	height: 593px;
 	width: 100%;
-
 	overflow: hidden;
 }
 
@@ -1193,7 +1191,6 @@ img {
 }
 
 .sort-options-list .sort-option {
-
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: normal;
@@ -1418,7 +1415,7 @@ img {
 	-ms-flex-align: center;
 	align-items: center;
 	width: 100%;
-	padding: 37px 0 30px;
+	padding: 35px 0 30px;
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -1439,7 +1436,7 @@ img {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	margin-bottom: 10px;
+	margin-bottom: 9px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	-webkit-box-sizing: border-box;
@@ -1484,7 +1481,14 @@ img {
 }
 
 .copyright-link {
-	padding: 0 40px;
+	width: 33.3334%;
+	padding: 0 96px 6px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.copyright-link a {
+	
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1495,9 +1499,6 @@ img {
 	-ms-flex-align: center;
 	align-items: center;
 	text-align: center;
-	width: 33.3334%;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 .copyright-link p {
@@ -1506,9 +1507,10 @@ img {
 	padding: 0;
 	font-size: 14px;
 	line-height: 26px;
-	margin-bottom: 6px;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	color: #000000;
+	cursor: pointer;
 }
 
 .copyright-logo:focus g,
@@ -1542,6 +1544,10 @@ img {
 
 .modal {
 	display: none;
+}
+
+.modal-open {
+	display: block;
 }
 
 .modal-show {
@@ -1634,7 +1640,7 @@ img {
 	fill: #81b3d2;
 }
 
-.people-column {
+.index-column {
 	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1644,7 +1650,7 @@ img {
 	justify-content: space-between;
 }
 
-.people-column input {
+.index-column input {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
